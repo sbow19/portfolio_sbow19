@@ -165,14 +165,14 @@ params:
         image: /images/bounce.jpeg
         featured:
           name: Demo
-          link: https://buzzvel-test-eta.vercel.app/
+          link: https://webgl-bounce.netlify.app/
         badges:
           - "Next.js"
           - "Framer Motion"
           - "TypeScript"
         links:
           - icon: fab fa-github
-            url: https://github.com/sbow19/buzzvel-test
+            url: https://github.com/sbow19/WEBGL-bounce
 
       - title: Messaging CLI App
         content: A CLI application built with Go using the TView CLI library. Implemented WebSockets locally using  client-server architecture. The app allows users to communicate in real-time whilst doing other things on the app, like playing Snake.
