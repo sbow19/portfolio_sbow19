@@ -1,0 +1,236 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "My Resume"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+params:
+  title: "My Resume"
+  description: "Welcome to my Resume"
+
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#007bff"
+    secondaryColor: "#f8f9fa"
+
+    darkmode:
+      textColor: "#e4e6eb"
+      secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#ffffff"
+      backgroundColor: "#18191a"
+      secondaryBackgroundColor: "#212529"
+      primaryColor: "#ffffff"
+      secondaryColor: "#212529"
+  
+  navbar:
+    align: mx-auto
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+    enableSeparator: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Sam."
+    subtitle: "Software Developer"
+    image: "images/misc/headshot.jpg"
+    content: "Building useful things with modern tools — driven by curiosity and passion."
+    bottomImage:
+      enable: true
+    button: 
+      enable: true
+      name: "Resume"
+      url: "files/Sam_Bowditch.pdf"
+      download: true
+      newPage: false
+
+  # About
+  about:
+    enable: true
+    title: "About me"
+    content: |
+     I’m a curious software developer passionate about building full-stack productivity apps for mobile and web. I specialise in JavaScript/TypeScript, Python, and Go, and I’m currently expanding my toolkit with Flutter.
+
+      After starting my career in law and working at an international audit firm for 2.5 years, I pivoted to software engineering to build tools that make a practical difference.
+
+      Recently, I created Chrome Extensions that speed up data collection and enable in-browser text highlighting, translating, and saving. Other projects include a CLI messaging app in Go, a 3D browser demo with WebGL, and a Flutter app for sharing experiences with friends using pinned Google Maps locations.
+
+      I am currently based in Rio de Janeiro, Brazil.
+    
+    skills:
+      enable: true
+      title: "These are the technologies I use:"
+      items:
+          - "TypeScript"
+          - "Python"
+          - "Go"
+          - "Dart"
+          - "React/Next.js"
+          - "Node"
+          - "Flutter"
+          - "React Native"
+          - "MySQL/SQLite"
+          - "MongoDB"
+
+  # Experience
+  experience:
+    enable: true
+    items: 
+      - job: "React Developer"
+        company: "Tulfa Inc"
+        date: "December 2024 - February 2025"
+        content: |
+          I lead the development of the company’s portfolio page, which they were migrating from Next.js.
+
+          I created a dynamic, cross-platform, and responsive front-end portfolio page and worked closely with the UX team and Figma to design intuitive, visually appealing interfaces.
+
+          I also integrated React-Motion for animations and Three.js for user-manipulatable 3D objects.
+
+      - job: "Career Break"
+        company: Break
+        date: "August 2023 - December 2024"
+        content: |
+          I decided to take a career break to focus on building my web development skills, I dedicated myself to learning and
+          applying new technologies through personal projects.
+
+          During this time, I worked on projects using React, the Chrome Browser API, MySQL, Go, and other technologies.
+      
+      - job: "Corporate Intelligence Analyst"
+        company: Grant Thornton UK
+        date: "February 2021 - August 2023"
+        content: |
+          I supported the in-house Corporate Intelligence team's operations, by conducting small-scale desktop asset tracing investigations, and assisting with large cross-border asset tracing investigations.
+
+          I developed a sound understanding of open-source intelligence methodologies and resources.
+          
+          I challenged myself by learning Python and developed several scripts and small tools to boost productivity.
+  
+  # projects
+  projects: 
+    enable: true
+    items:
+      - title: Vocab Tracker
+        content: A Chrome Extension allowing users to highlight, translate, and save text as they go on the browser, leveraging the DeepL API, Chrome Extension API, and IndexedDB. There is also a minimal Node.js backend to
+          manage API calls.
+        image: images/translations.jpg
+        featured:
+          name: Chrome Store
+          link: https://chromewebstore.google.com/detail/vocab-tracker/ficfpfncdlbecpiljekkpckhpdhkdmio?utm_source=item-share-cb&pli=1
+        badges:
+          - "TypeScript"
+          - "Chrome Extension"
+          - "IndexedDB"
+        links:
+          - icon: fab fa-github
+            url: https://www.github.com/sbow19/vocab-tracker-extension
+
+     
+
+      - title: Demo Teacher Platform
+        content: A demo landing page for a teaching platform, implemented with Next.js and taking advantage of SEO enhancement features of the framework. 
+        image: /images/teacher.png
+        featured:
+          name: Demo
+          link: https://buzzvel-test-eta.vercel.app/
+        badges:
+          - "Next.js"
+          - "Framer Motion"
+          - "TypeScript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/sbow19/buzzvel-test
+      
+      - title: WebGL Browser Demo
+        content: Small physics-based demonstration of simple object creation using the WebGL rendering engine. Built with TypeScript.
+        image: /images/bounce.jpeg
+        featured:
+          name: Demo
+          link: https://buzzvel-test-eta.vercel.app/
+        badges:
+          - "Next.js"
+          - "Framer Motion"
+          - "TypeScript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/sbow19/buzzvel-test
+
+      - title: Messaging CLI App
+        content: A CLI application built with Go using the TView CLI library. Implemented WebSockets locally using  client-server architecture. The app allows users to communicate in real-time whilst doing other things on the app, like playing Snake.
+        image: /images/snake.jpeg
+        badges:
+          - "Go"
+          - "TView"
+          - "WebSockets"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/sbow19/messaging-CLI
+      - title: Vocab Panda (WIP)
+        content: A vocabulary management React-Native Android app aimed at enhancing language
+          skills,
+          integrating RESTful API calls, SQLite and MySQL, authorisation flows and encryption, and
+          routing and animation libraries.
+        image: /images/translation-ex.jpg
+        badges:
+          - "React Native"
+          - "MySQL"
+          - "RESTful API"
+        links:
+          - icon: fab fa-github
+            url: https://www.github.com/sbow19/VocabPanda
+
+  
+  # Education
+  education:
+    enable: true
+    items: 
+      - title: "LLB Law with another Legal System (Australia)"
+        school:
+          name: "University College London"
+        date: "2015 - 2019"
+        GPA: "2:1"
+      - title: "A-levels"
+        school:
+          name: "Colchester Sixth Form College"
+        date: 2013 - 2015
+        content: |
+          - Mathematics: A*     
+          - Physics: A    
+          - English Language: A
+    
+  
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:zctlsab@gmail.com
+
+  footer:
+    socialNetworks:
+        linkedin: "https://www.linkedin.com/in/sam-bowditch-b777032bb/"
+        github: "https://www.github.com/sbow19"
+  
+  singlePages:
+    scrollprogress:
+      enable: true
+
