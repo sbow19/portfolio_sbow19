@@ -51,16 +51,16 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Sam."
-    subtitle: "Software Developer"
+    title: "Sam Bowditch."
+    subtitle: "Software Engineer"
     image: "images/misc/headshot.jpg"
-    content: "Building useful things with modern tools — driven by curiosity and passion."
+    content: "Building useful things with modern tools — driven by curiosity and passion for qualtiy."
     bottomImage:
       enable: true
     button: 
       enable: true
       name: "Resume"
-      url: "files/Sam_Bowditch.pdf"
+      url: "files/sam_bowditch_resume.pdf"
       download: true
       newPage: false
 
@@ -69,33 +69,46 @@ params:
     enable: true
     title: "About me"
     content: |
-     I’m a curious software developer passionate about building full-stack productivity apps for mobile and web. I specialise in JavaScript/TypeScript, Python, and Go, and I’m currently expanding my toolkit with Flutter.
+     I’m a curious fullstack software engineer passionate about building cross-platform fullstack applications with modern technologies.
 
-      After starting my career in law and working at an international audit firm for 2.5 years, I pivoted to software engineering to build tools that make a practical difference.
+      After starting my career in law and 2.5 years working at an international audit firm, I pivoted to software engineering to build tools that make a practical difference.
 
-      Recently, I created Chrome Extensions that speed up data collection and enable in-browser text highlighting, translating, and saving. Other projects include a CLI messaging app in Go, a 3D browser demo with WebGL, and a Flutter app for sharing experiences with friends using pinned Google Maps locations.
+      I gained valuable experience as a software engineer working for a SaaS platform for small businesses. There, I discovered my strengths in 
+      designing, managing, and implementing features and projects, and an intense drive to maintain quality and ownership.
 
-      I am currently based in Rio de Janeiro, Brazil.
+      I am British, but I am permanently residing in in Rio de Janeiro, Brazil.
     
     skills:
       enable: true
-      title: "These are the technologies I use:"
+      title: "These are some of the key technologies I have used:"
       items:
+          - "Supabase"
           - "TypeScript"
-          - "Python"
+          - "Flutter"
+          - "Claude Code"
           - "Go"
-          - "Dart"
           - "React/Next.js"
           - "Node"
           - "Flutter"
-          - "React Native"
-          - "MySQL/SQLite"
-          - "MongoDB"
+          - "Postgres/SQLite"
+          - "Gitlab"
 
   # Experience
   experience:
     enable: true
     items: 
+      - job: "Fullstack Software Engineer"
+        company: "Olly Olly Inc"
+        date: "August 2025 - Current"
+        content: |
+          I support development of Olly Olly’s core cross-platform app offerings. I regularly create and design documents and spikes, and I strongly advocate for best practices.
+
+          I regularly develop with Flutter, Supabase, Vue, and other technologies.
+
+          I am a strong contributor across all areas of the engineering team’s workflows, with a core focus on tracing and implementing performance optimisations and automations.
+
+          Notable recent projects that demonstrate my commitment to quality include creating Instagram OAuth access token refresh flows, social media feature memory leak detection and performance improvements, and database maintenance and security enhancements.
+
       - job: "React Developer"
         company: "Tulfa Inc"
         date: "December 2024 - February 2025"
@@ -107,10 +120,10 @@ params:
           I also integrated React-Motion for animations and Three.js for user-manipulatable 3D objects.
 
       - job: "Career Break"
-        company: Break
+        company: Career Break
         date: "August 2023 - December 2024"
         content: |
-          I decided to take a career break to focus on building my web development skills, I dedicated myself to learning and
+          I decided to take a career break to focus on building my web development skills. I dedicated myself to learning and
           applying new technologies through personal projects.
 
           During this time, I worked on projects using React, the Chrome Browser API, MySQL, Go, and other technologies.
